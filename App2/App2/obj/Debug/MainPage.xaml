@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="App2.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Pivot Title="Movie Randomator">
+            <PivotItem Header="menu1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Button x:ConnectionId='1' x:Name="RandomBtn" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Top"
+                            Content="Get Movie" Background="Red"                        />
+                    <Image x:Name="img" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                </Grid>
+            </PivotItem>
+            
+            <PivotItem Header="menu2">
+                
+            </PivotItem>
+        </Pivot>
+    </Grid>
+</Page>
+
