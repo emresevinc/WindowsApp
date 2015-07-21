@@ -6,8 +6,20 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    >
+    <Page.Resources>
+        <Style x:Key="cc" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="15"></Setter>
+            <Setter Property="TextWrapping" Value="Wrap"></Setter>
+        </Style>
+    </Page.Resources>
+    <Page.BottomAppBar>
+        <CommandBar>
+            <AppBarButton x:ConnectionId='1' x:Name="appBarBtn" Icon="Refresh" Label="Get Movie"                        />
+        </CommandBar>
+    </Page.BottomAppBar>
+    
     <Grid>
         <Pivot Title="Movie Randomator">
             <PivotItem Header="menu1">
@@ -16,14 +28,78 @@
                         <RowDefinition Height="Auto"></RowDefinition>
                         <RowDefinition Height="*"></RowDefinition>
                     </Grid.RowDefinitions>
-                    <Button x:ConnectionId='1' x:Name="RandomBtn" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Top"
-                            Content="Get Movie" Background="Red"                        />
-                    <Image x:Name="img" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <TextBlock Text="Poster" Style="{StaticResource SubheaderTextBlockStyle}"></TextBlock>
+                    <Image x:Name="img" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,10,10,10"/>
                 </Grid>
             </PivotItem>
-            
-            <PivotItem Header="menu2">
-                
+            <PivotItem Header="Movie Info">
+                <ScrollViewer>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Title :" Style="{StaticResource cc}"  Grid.Column="0" Grid.Row="0"></TextBlock>
+                    <TextBlock x:Name="titleTxt" Style="{StaticResource cc}" Grid.Column="1" Grid.Row="0"></TextBlock>
+                    <TextBlock Text="Year :" Style="{StaticResource cc}" Grid.Column="0" Grid.Row="1"></TextBlock>
+                    <TextBlock x:Name="yearTxt" Style="{StaticResource cc}" Grid.Column="1" Grid.Row="1"></TextBlock>
+                    <TextBlock Text="Rated :" Style="{StaticResource cc}" Grid.Column="0" Grid.Row="2"></TextBlock>
+                    <TextBlock x:Name="ratedTxt" Style="{StaticResource cc}" Grid.Column="1" Grid.Row="2"></TextBlock>
+                    <TextBlock Text="Released :" Style="{StaticResource cc}" Grid.Column="0" Grid.Row="3"></TextBlock>
+                    <TextBlock x:Name="releasedTxt" Style="{StaticResource cc}" Grid.Column="1" Grid.Row="3"></TextBlock>
+                    <TextBlock Text="Runtime :" Style="{StaticResource cc}" Grid.Column="0" Grid.Row="4"></TextBlock>
+                    <TextBlock x:Name="runtimeTxt" Style="{StaticResource cc}" Grid.Column="1" Grid.Row="4"></TextBlock>
+                    <TextBlock Text="Genre :" Style="{StaticResource cc}" Grid.Column="0" Grid.Row="5"></TextBlock>
+                    <TextBlock x:Name="genreTxt" Style="{StaticResource cc}" Grid.Column="1" Grid.Row="5"></TextBlock>
+                    <TextBlock Text="Director :" Style="{StaticResource cc}" Grid.Column="0" Grid.Row="6"></TextBlock>
+                    <TextBlock x:Name="directorTxt" Style="{StaticResource cc}" Grid.Column="1" Grid.Row="6"></TextBlock>
+                    <TextBlock Text="Writer :" Style="{StaticResource cc}" Grid.Column="0" Grid.Row="7"></TextBlock>
+                    <TextBlock x:Name="writerTxt" Style="{StaticResource cc}" Grid.Column="1" Grid.Row="7"></TextBlock>
+                    <TextBlock Text="Actors :" Style="{StaticResource cc}" Grid.Column="0" Grid.Row="8"></TextBlock>
+                    <TextBlock x:Name="actorsTxt" Style="{StaticResource cc}" Grid.Column="1" Grid.Row="8"></TextBlock>
+                    <TextBlock Text="Plot :" Style="{StaticResource cc}" Grid.Column="0" Grid.Row="9"></TextBlock>
+                    <TextBlock x:Name="plotTxt" Style="{StaticResource cc}" Grid.Column="1" Grid.Row="9"></TextBlock>
+                    <TextBlock Text="Language :" Style="{StaticResource cc}" Grid.Column="0" Grid.Row="10"></TextBlock>
+                    <TextBlock x:Name="languageTxt" Style="{StaticResource cc}" Grid.Column="1" Grid.Row="10"></TextBlock>
+                    <TextBlock Text="Country :" Style="{StaticResource cc}" Grid.Column="0" Grid.Row="11"></TextBlock>
+                    <TextBlock x:Name="countryTxt" Style="{StaticResource cc}" Grid.Column="1" Grid.Row="11"></TextBlock>
+                    <TextBlock Text="Awards :" Style="{StaticResource cc}" Grid.Column="0" Grid.Row="12"></TextBlock>
+                    <TextBlock x:Name="awardsTxt" Style="{StaticResource cc}" Grid.Column="1" Grid.Row="12"></TextBlock>
+                    <TextBlock Text="Metascore :" Style="{StaticResource cc}" Grid.Column="0" Grid.Row="13"></TextBlock>
+                    <TextBlock x:Name="metascoreTxt" Style="{StaticResource cc}" Grid.Column="1" Grid.Row="13"></TextBlock>
+                    <TextBlock Text="Imdb Rating :" Style="{StaticResource cc}" Grid.Column="0" Grid.Row="14"></TextBlock>
+                    <TextBlock x:Name="imdbRatingTxt" Style="{StaticResource cc}" Grid.Column="1" Grid.Row="14"></TextBlock>
+                    <TextBlock Text="Imdb Votes :" Style="{StaticResource cc}" Grid.Column="0" Grid.Row="15"></TextBlock>
+                    <TextBlock x:Name="imdbVotesTxt" Style="{StaticResource cc}" Grid.Column="1" Grid.Row="15"></TextBlock>
+                    <TextBlock Text="Type :" Style="{StaticResource cc}" Grid.Column="0" Grid.Row="16"></TextBlock>
+                    <TextBlock x:Name="typeTxt" Style="{StaticResource cc}" Grid.Column="1" Grid.Row="16"></TextBlock>
+                    <TextBlock Text="Response :"  Style="{StaticResource cc}" Grid.Column="0" Grid.Row="17"></TextBlock>
+                    <TextBlock x:Name="responseTxt" Style="{StaticResource cc}" Grid.Column="1" Grid.Row="17"></TextBlock>
+                    <TextBlock Text="Imdb ID :" Style="{StaticResource cc}" Grid.Column="0" Grid.Row="18"></TextBlock>
+                    <TextBlock x:Name="imdbIDTxt" Style="{StaticResource cc}" Grid.Column="1" Grid.Row="18"></TextBlock>
+                </Grid>
+                </ScrollViewer>
             </PivotItem>
         </Pivot>
     </Grid>
