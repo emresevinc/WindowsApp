@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="MRandomator">
+  <DataContextMoniker Name="/MRandomatorDataContext" />
+  <nestedChildShapes>
+    <classShape Id="86131555-ca6e-4c8a-a0f0-c7daa55d22ca" absoluteBounds="4, 1.375, 2, 4.6554182942708326">
+      <DataClassMoniker Name="/MRandomatorDataContext/Movy" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fb882056-0d9a-47ea-b8fc-02fe4e108685" absoluteBounds="4.015, 1.835, 1.9700000000000002, 4.095418294270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

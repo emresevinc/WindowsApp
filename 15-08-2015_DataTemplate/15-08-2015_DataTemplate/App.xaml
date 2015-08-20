@@ -1,0 +1,30 @@
+﻿<Application
+    x:Class="_15_08_2015_DataTemplate.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:_15_08_2015_DataTemplate"
+    RequestedTheme="Light">
+
+    <Application.Resources>
+        
+        <!--ListView e eklenecek item formatı-->
+        <DataTemplate x:Name="CustomerTemplate">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Text="{Binding FirstName}"/>
+                <TextBlock Grid.Column="1" Text="{Binding LastName}"/>
+            </Grid>
+        </DataTemplate>
+
+        <!-- Bir buton stili belirleyip, örneklediğimizde stilini buraya refere edebiliriz.-->
+        <Style TargetType="Button" x:Name="myButton">
+            <Setter Property="Background" Value="Yellow"></Setter>
+            <Setter Property="Foreground" Value="NavajoWhite"></Setter>
+            <Setter Property="Content" Value="My Button"></Setter>
+        </Style>
+        
+    </Application.Resources>
+</Application>

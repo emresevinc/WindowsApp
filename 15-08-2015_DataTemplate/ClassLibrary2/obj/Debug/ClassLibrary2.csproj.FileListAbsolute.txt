@@ -1,0 +1,4 @@
+C:\Users\Emre\Documents\Visual Studio 2015\Projects\15-08-2015_DataTemplate\ClassLibrary2\bin\Debug\ClassLibrary2.dll
+C:\Users\Emre\Documents\Visual Studio 2015\Projects\15-08-2015_DataTemplate\ClassLibrary2\bin\Debug\ClassLibrary2.pdb
+C:\Users\Emre\Documents\Visual Studio 2015\Projects\15-08-2015_DataTemplate\ClassLibrary2\obj\Debug\ClassLibrary2.dll
+C:\Users\Emre\Documents\Visual Studio 2015\Projects\15-08-2015_DataTemplate\ClassLibrary2\obj\Debug\ClassLibrary2.pdb

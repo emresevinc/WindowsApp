@@ -1,0 +1,6 @@
+c:\users\emre\documents\visual studio 2015\Projects\WebApiExample1\WebApiConsole1\bin\Debug\WebApiConsole1.exe.config
+c:\users\emre\documents\visual studio 2015\Projects\WebApiExample1\WebApiConsole1\bin\Debug\WebApiConsole1.exe
+c:\users\emre\documents\visual studio 2015\Projects\WebApiExample1\WebApiConsole1\bin\Debug\WebApiConsole1.pdb
+c:\users\emre\documents\visual studio 2015\Projects\WebApiExample1\WebApiConsole1\obj\Debug\WebApiConsole1.csprojResolveAssemblyReference.cache
+c:\users\emre\documents\visual studio 2015\Projects\WebApiExample1\WebApiConsole1\obj\Debug\WebApiConsole1.exe
+c:\users\emre\documents\visual studio 2015\Projects\WebApiExample1\WebApiConsole1\obj\Debug\WebApiConsole1.pdb
